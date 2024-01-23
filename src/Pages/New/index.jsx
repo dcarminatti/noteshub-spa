@@ -1,9 +1,10 @@
+import { Container, Form } from "./style";
+import { Button } from "../../Components/Button";
 import { Header } from "../../Components/Header";
 import { Input } from "../../Components/Input";
-import { TextArea } from "../../Components/TextArea";
 import { NoteItem } from "../../Components/NoteItem";
 import { Section } from "../../Components/Section";
-import { Container, Form } from "./style";
+import { TextArea } from "../../Components/TextArea";
 
 export function New() {
   return (
@@ -22,8 +23,17 @@ export function New() {
 
           <Section title="Links úteis">
             <NoteItem value="https://react.dev/" />
-            <NoteItem value="" isNew />
+            <NoteItem placeholder="Novo link" isNew />
           </Section>
+
+          <Section title="Marcadores">
+            <div className="tags">
+              <NoteItem value="React" />
+              <NoteItem value="Nova tag" />
+            </div>
+          </Section>
+
+          <Button title="Salvar" />
         </Form>
       </main>
     </Container>

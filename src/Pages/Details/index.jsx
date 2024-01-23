@@ -6,7 +6,7 @@ import { Tag } from "../../Components/Tags";
 
 import { Content, Container, Links } from "./style";
 
-export default function Details() {
+export function Details() {
   return (
     <Container>
       <Header />
