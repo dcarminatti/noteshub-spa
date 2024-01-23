@@ -15,7 +15,7 @@ export const Container = styled.div`
     padding: 0 124px;
 
     svg {
-      color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+      color: ${({ theme }) => theme.COLORS.GRAY_300};
       font-size: 24px;
     }
   }
