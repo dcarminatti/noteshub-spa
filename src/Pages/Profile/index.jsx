@@ -1,7 +1,7 @@
-import { FiArrowLeft, FiUser, FiMail, FiLock } from "react-icons/fi";
+import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
 import { Input } from "../../Components/Input";
 import { Button } from "../../Components/Button";
-import { Container, Form } from "./style";
+import { Container, Form, Avatar } from "./style";
 
 export function Profile() {
   return (
@@ -13,6 +13,14 @@ export function Profile() {
       </header>
 
       <Form>
+        <Avatar>
+          <img src="https://github.com/dcarminatti.png" alt="Foto do usuário" />
+          <label>
+            <FiCamera />
+            <input type="file" id="avatar" />
+          </label>
+        </Avatar>
+
         <Input placeholder="Nome" type="text" icon={FiUser} />
         <Input placeholder="Email" type="email" icon={FiMail} />
         <Input placeholder="Senha atual" type="password" icon={FiLock} />
