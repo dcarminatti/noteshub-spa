@@ -37,17 +37,25 @@ export const Avatar = styled.div`
   width: 186px;
   height: 186px;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+  border-radius: 100%;
+
   > img {
-    width: 186px;
-    height: 186px;
     border-radius: 50%;
+
+    width: ${({ $userAvatar }) => (!$userAvatar ? "98px" : "186px")};
+    height: ${({ $userAvatar }) => (!$userAvatar ? "98px" : "186px")};
   }
 
   > label {
     width: 48px;
     height: 48px;
 
-    background: ${({ theme }) => theme.COLORS.ORANGE};
+    background: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
     border-radius: 50%;
 
     display: flex;

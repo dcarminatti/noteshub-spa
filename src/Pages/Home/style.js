@@ -30,7 +30,7 @@ export const Brand = styled.div`
 
   > h1 {
     font-size: 24px;
-    color: ${({ theme }) => theme.COLORS.ORANGE};
+    color: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
   }
 `;
 
@@ -61,7 +61,7 @@ export const Content = styled.div`
 export const NewNote = styled(Link)`
   grid-area: newnote;
 
-  background: ${({ theme }) => theme.COLORS.ORANGE};
+  background: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
   border: none;
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
