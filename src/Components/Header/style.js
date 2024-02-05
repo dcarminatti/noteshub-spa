@@ -17,9 +17,14 @@ export const Container = styled.header`
   padding: 0 80px;
 `;
 
-export const Profile = styled(Link)`
+export const Profile = styled.button`
   display: flex;
   align-items: center;
+
+  text-align: left;
+
+  background: none;
+  border: none;
 
   > img {
     width: 56px;

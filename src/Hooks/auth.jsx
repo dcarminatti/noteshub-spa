@@ -33,7 +33,7 @@ function AuthProvider({ children }) {
   }
 
   async function updateProfile({ user, avatarFile }) {
-    if (avatar) {
+    if (avatarFile) {
       const fileUpdateForm = new FormData();
       fileUpdateForm.append("avatar", avatarFile);
 

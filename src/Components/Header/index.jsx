@@ -1,19 +1,36 @@
-import { RiShutDownLine } from "react-icons/ri";
 import { useAuth } from "../../Hooks/auth";
+import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
+import { api } from "../../Services/api";
+
+import { RiShutDownLine } from "react-icons/ri";
 import { Container, Profile, Logout } from "./style";
 
 export function Header() {
-  const { signOut } = useAuth();
+  const [avatarUrl, setAvatarUrl] = useState("");
+
+  const { signOut, user } = useAuth(),
+    navigate = useNavigate();
+
+  function handleNavigateProfile() {
+    navigate("/profile");
+  }
+
+  useEffect(() => {
+    setAvatarUrl(
+      user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : ""
+    );
+  }, []);
 
   return (
     <Container>
-      <Profile to="/profile">
-        <img src="https://github.com/dcarminatti.png" alt="Foto do usuário" />
+      <Profile onClick={handleNavigateProfile}>
+        <img src={avatarUrl} alt="Foto do usuário" />
 
         <div>
           <span>Bem vindo,</span>
-          <strong>Dcarminatti</strong>
+          <strong>{user.name}</strong>
         </div>
       </Profile>
 

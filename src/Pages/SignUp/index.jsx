@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FiLock, FiMail, FiUser } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import { api } from "../../Services/api";
 
@@ -10,9 +10,11 @@ import { Button } from "../../Components/Button";
 import { Container, Form, Background } from "./style";
 
 export function SignUp() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [name, setName] = useState(""),
+    [email, setEmail] = useState(""),
+    [password, setPassword] = useState("");
+
+  const navigate = useNavigate();
 
   async function randomSignUp() {
     if (!name || !email || !password) {
@@ -20,7 +22,8 @@ export function SignUp() {
     }
     try {
       await api.post("/users", { name, email, password });
-      return alert("Usuário cadastrado com sucesso!");
+      alert("Usuário cadastrado com sucesso!");
+      navigate("/");
     } catch (error) {
       if (error.response) {
         return alert(error.response.data.message);
