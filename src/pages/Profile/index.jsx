@@ -1,14 +1,14 @@
 import { useState } from "react";
-import { useAuth } from "../../Hooks/auth";
+import { useAuth } from "../../hooks/auth";
 import { useNavigate } from "react-router-dom";
 
-import { api } from "../../Services/api";
+import { api } from "../../services/api";
 
-import avatarPlaceholder from "../../Assets/avatar-placeholder.svg";
+import avatarPlaceholder from "../../assets/avatar-placeholder.svg";
 
 import { FiArrowLeft, FiUser, FiMail, FiLock, FiCamera } from "react-icons/fi";
-import { Input } from "../../Components/Input";
-import { Button } from "../../Components/Button";
+import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
 import { Container, Form, Avatar } from "./style";
 
 export function Profile() {

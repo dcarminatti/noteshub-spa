@@ -1,14 +1,14 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { FiPlus, FiSearch } from "react-icons/fi";
-import { api } from "../../Services/api";
+import { api } from "../../services/api";
 
 import { Container, Brand, Menu, Search, Content, NewNote } from "./style";
-import { Input } from "../../Components/Input";
-import { Note } from "../../Components/Note";
-import { Section } from "../../Components/Section";
-import { Header } from "../../Components/Header";
-import { ButtonText } from "../../Components/ButtonText";
+import { Input } from "../../components/Input";
+import { Note } from "../../components/Note";
+import { Section } from "../../components/Section";
+import { Header } from "../../components/Header";
+import { ButtonText } from "../../components/ButtonText";
 
 export function Home() {
   const [tags, setTags] = useState([]),

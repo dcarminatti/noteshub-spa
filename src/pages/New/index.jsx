@@ -1,17 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-import { api } from "../../Services/api";
+import { api } from "../../services/api";
 
 import { Container, Form } from "./style";
-import { Button } from "../../Components/Button";
-import { ButtonText } from "../../Components/ButtonText";
-import { Header } from "../../Components/Header";
-import { Input } from "../../Components/Input";
+import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
+import { Header } from "../../components/Header";
+import { Input } from "../../components/Input";
 
-import { NoteItem } from "../../Components/NoteItem";
-import { Section } from "../../Components/Section";
-import { TextArea } from "../../Components/TextArea";
+import { NoteItem } from "../../components/NoteItem";
+import { Section } from "../../components/Section";
+import { TextArea } from "../../components/TextArea";
 
 export function New() {
   const [title, setTitle] = useState(""),

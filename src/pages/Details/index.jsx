@@ -1,13 +1,13 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 
-import { api } from "../../Services/api";
+import { api } from "../../services/api";
 
-import { Header } from "../../Components/Header";
-import { Button } from "../../Components/Button";
-import { ButtonText } from "../../Components/ButtonText";
-import { Section } from "../../Components/Section";
-import { Tag } from "../../Components/Tags";
+import { Header } from "../../components/Header";
+import { Button } from "../../components/Button";
+import { ButtonText } from "../../components/ButtonText";
+import { Section } from "../../components/Section";
+import { Tag } from "../../components/Tags";
 
 import { Content, Container, Links } from "./style";
 

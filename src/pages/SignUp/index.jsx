@@ -2,10 +2,10 @@ import { useState } from "react";
 import { FiLock, FiMail, FiUser } from "react-icons/fi";
 import { useNavigate, Link } from "react-router-dom";
 
-import { api } from "../../Services/api";
+import { api } from "../../services/api";
 
-import { Input } from "../../Components/Input";
-import { Button } from "../../Components/Button";
+import { Input } from "../../components/Input";
+import { Button } from "../../components/Button";
 
 import { Container, Form, Background } from "./style";
 
