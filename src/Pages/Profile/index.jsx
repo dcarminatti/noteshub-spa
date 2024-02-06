@@ -60,7 +60,7 @@ export function Profile() {
       </header>
 
       <Form>
-        <Avatar $userAvatar={user.avatar}>
+        <Avatar $userAvatar={user.avatar || avatar}>
           <img src={avatar} alt="Foto do usuário" />
           <label>
             <FiCamera />
