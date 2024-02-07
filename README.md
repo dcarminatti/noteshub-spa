@@ -1,9 +1,6 @@
 # NotesHub
 Welcome to NotesHub, your personal note creation and organization tool where you can create an account, log in with a username, create notes with titles, descriptions, links, and tags. On the homepage, you can view the created notes and navigate through them. There's also a search bar where you can search for notes, and the ability to filter notes by their tags.
 
-### Deploy
-To see the online demo [click here](https://main--noteshub-dc.netlify.app/)
-
 ### Description
 NotesHub is a web application that allows users to create and manage their notes in a simple and efficient way. With an intuitive interface and flexible features, you can create notes with descriptive titles, detailed descriptions, relevant links, and tags for personalized organization.
 
@@ -13,6 +10,9 @@ NotesHub is a web application that allows users to create and manage their notes
 - Viewing Notes: On the homepage, you can view all created notes, easily navigating through them to access their content.
 - Search Bar: Utilize the search bar to quickly find specific notes, filtering by title, description, or associated tags.
 - Tag Filtering: Explore your notes according to their tags, facilitating organization and access to related content.
+
+### Deploy
+To see the online demo [click here](https://main--noteshub-dc.netlify.app/)
 
 ### How to Use
 - Create an Account: Register with a valid email and a secure password.
