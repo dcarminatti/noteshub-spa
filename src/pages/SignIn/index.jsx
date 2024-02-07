@@ -6,8 +6,9 @@ import { useAuth } from "../../hooks/auth";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { Background } from "../../components/Background";
 
-import { Container, Form, Background } from "./style";
+import { Container, Form } from "./style";
 
 export function SignIn() {
   const [email, setEmail] = useState();

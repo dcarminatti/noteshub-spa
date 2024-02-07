@@ -26,7 +26,7 @@ export function Header() {
   return (
     <Container>
       <Profile onClick={handleNavigateProfile}>
-        <img src={avatarUrl} alt="Foto do usuário" />
+        {avatarUrl && <img src={avatarUrl} alt="Foto do usuário" />}
 
         <div>
           <span>Bem vindo,</span>

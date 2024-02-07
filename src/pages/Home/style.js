@@ -24,13 +24,13 @@ export const Brand = styled.div`
   justify-content: center;
   align-items: center;
 
-  border: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
+  border-bottom: 1px solid ${({ theme }) => theme.COLORS.BACKGROUND_700};
 
   background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 
   > h1 {
     font-size: 24px;
-    color: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
+    color: ${({ theme }) => theme.COLORS.LIGHT_ROSE};
   }
 `;
 
@@ -61,7 +61,7 @@ export const Content = styled.div`
 export const NewNote = styled(Link)`
   grid-area: newnote;
 
-  background: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
+  background: ${({ theme }) => theme.COLORS.LIGHT_ROSE};
   border: none;
   color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
 

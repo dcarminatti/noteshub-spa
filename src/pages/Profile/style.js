@@ -15,7 +15,7 @@ export const Container = styled.div`
     padding: 0 124px;
 
     svg {
-      color: ${({ theme }) => theme.COLORS.GRAY_300};
+      color: ${({ theme }) => theme.COLORS.PURPLE_300};
       font-size: 24px;
     }
 
@@ -52,15 +52,17 @@ export const Avatar = styled.div`
   > img {
     border-radius: 50%;
 
-    width: ${({ $userAvatar }) => (!$userAvatar ? "98px" : "186px")};
-    height: ${({ $userAvatar }) => (!$userAvatar ? "98px" : "186px")};
+    object-fit: cover;
+
+    width: 186px;
+    height: 186px;
   }
 
   > label {
     width: 48px;
     height: 48px;
 
-    background: ${({ theme }) => theme.COLORS.LIGHT_BLUE};
+    background: ${({ theme }) => theme.COLORS.LIGHT_ROSE};
     border-radius: 50%;
 
     display: flex;
