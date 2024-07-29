@@ -4,7 +4,7 @@ export const Container = styled.button`
   width: 100%;
   height: 56px;
 
-  background-color: ${({ theme }) => theme.COLORS.LIGHT_ROSE};
+  background-color: ${({ theme }) => theme.COLORS.LIGHT_GRAY};
   border: 0;
   border-radius: 10px;
 

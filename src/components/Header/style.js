@@ -41,7 +41,7 @@ export const Profile = styled.button`
 
     > span {
       font-size: 14px;
-      color: ${({ theme }) => theme.COLORS.PURPLE_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
 
     > strong {
@@ -56,7 +56,7 @@ export const Logout = styled.button`
   background: none;
 
   > svg {
-    color: ${({ theme }) => theme.COLORS.PURPLE_100};
+    color: ${({ theme }) => theme.COLORS.GRAY_100};
     font-size: 24px;
   }
 `;

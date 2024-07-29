@@ -7,10 +7,10 @@ export const Container = styled.div`
   background-color: ${({ theme, $isNew }) =>
     $isNew ? "transparent" : theme.COLORS.BACKGROUND_900};
 
-  color: ${({ theme }) => theme.COLORS.PURPLE_300};
+  color: ${({ theme }) => theme.COLORS.GRAY_300};
 
   border: ${({ theme, $isNew }) =>
-    $isNew ? `1px dashed ${theme.COLORS.PURPLE_300}` : "none"};
+    $isNew ? `1px dashed ${theme.COLORS.GRAY_300}` : "none"};
 
   margin-bottom: 8px;
   border-radius: 10px;
@@ -27,7 +27,7 @@ export const Container = styled.div`
   }
 
   .button-add {
-    color: ${({ theme }) => theme.COLORS.LIGHT_ROSE};
+    color: ${({ theme }) => theme.COLORS.LIGHT_GRAY};
   }
 
   > input {
@@ -43,7 +43,7 @@ export const Container = styled.div`
     border: none;
 
     &::placeholder {
-      color: ${({ theme }) => theme.COLORS.PURPLE_300};
+      color: ${({ theme }) => theme.COLORS.GRAY_300};
     }
   }
 `;

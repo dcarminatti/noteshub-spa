@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.button`
   background: none;
   color: ${({ theme, $isActive }) =>
-    $isActive ? theme.COLORS.LIGHT_ROSE : theme.COLORS.PURPLE_100};
+    $isActive ? theme.COLORS.GRAY_100 : theme.COLORS.GRAY_100};
   border: none;
   font-size: 16px;
 `;
