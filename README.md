@@ -6,6 +6,8 @@
 
 NotesHub is a robust web application designed for efficient note management. With its intuitive interface, you can create notes with descriptive titles, detailed descriptions, relevant links, and tags for personalized organization.
 
+![NotesHub Screenshot](https://github.com/user-attachments/assets/027bcb61-6481-4888-a898-e3e0eacf754e)
+
 ## Features
 
 - **🔐 Account Creation and Login**: Securely sign up and log in to access your notes anytime.
@@ -38,8 +40,6 @@ NotesHub is built with modern technologies for optimal performance and security:
 ## API
 
 The backend uses a custom-developed API located in another Git repository. For additional examples and detailed documentation, check out the [repository](https://github.com/dcarminatti/noteshub-api).
-
-![NotesHub Screenshot](https://github.com/user-attachments/assets/027bcb61-6481-4888-a898-e3e0eacf754e)
 
 ## Credits
 
