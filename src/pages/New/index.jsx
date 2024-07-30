@@ -90,7 +90,7 @@ export function New() {
         alert("Erro ao criar nota");
       }
     } catch (error) {
-      alert("Erro ao criar nota");
+      // alert("Erro ao criar nota");
       handleBack();
     }
   }
