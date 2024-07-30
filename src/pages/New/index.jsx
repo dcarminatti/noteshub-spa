@@ -75,15 +75,24 @@ export function New() {
       return capitalizeWords(tag);
     });
 
-    await api.post("/notes", {
-      title,
-      description,
-      tags: formatTags,
-      links,
-    });
+    try {
+      const response = await api.post("/notes", {
+        title,
+        description,
+        tags: formatTags,
+        links,
+      });
 
-    alert("Nota criada com sucesso");
-    navigate(-1);
+      if (response.status === 201) {
+        alert("Nota criada com sucesso");
+        handleBack()
+      } else {
+        alert("Erro ao criar nota");
+      }
+    } catch (error) {
+      alert("Erro ao criar nota");
+      handleBack();
+    }
   }
 
   function handleBack() {
